@@ -29,7 +29,7 @@ const fixedGridAreas = {
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "stephen-poore-gpqV6TcGWmk-unsplash.jpg" }) {
+      file(relativePath: { eq: "derrick-brooks-jgMhuuwQVkY-unsplash.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
@@ -68,11 +68,11 @@ export default () => {
           <Container>
             <Box pad="large">
               <Heading level={1} color="text">
-                Our Mission
+                About Us
               </Heading>
               <Box width="large">
-                <Paragraph color="text" size="large" fill>
-                We make the internet faster one website a time. Source was made with one goal in mind. Building better websites for businesses in Richmond, VA.
+                <Paragraph color="text" fill>
+                Founded in 2019, Source was made with one goal in mind. Building better websites for businesses in Richmond, VA. Our local experts know the area and can target your audience.
                 </Paragraph>
               </Box>
             </Box>

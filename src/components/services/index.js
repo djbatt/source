@@ -1,10 +1,12 @@
 import React from "react"
 import Hero from "./hero"
-import Text from "./text"
+import Cards from "./cards"
+import Hero2 from "./hero2"
 
 export default () => (
   <>
     <Hero />
-    <Text />
+    <Cards />
+    <Hero2 />
   </>
 )

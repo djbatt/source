@@ -29,7 +29,7 @@ const fixedGridAreas = {
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "stephen-poore-TZUAQH7ACe4-unsplash.jpg" }) {
+      file(relativePath: { eq: "stephen-poore-gpqV6TcGWmk-unsplash.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
@@ -72,7 +72,9 @@ export default () => {
               </Heading>
               <Box width="large">
                 <Paragraph color="text" size="large" fill>
-                Source is a local digital marketing agency started in 2019. Founded in David Battiston's living room our mission was simple: Build better websites for businesses in Richmond.
+                  Our work is professional and beats the competitors. An
+                  effective website doesn't just supplement your business, it's
+                  a force multiplier.
                 </Paragraph>
               </Box>
             </Box>

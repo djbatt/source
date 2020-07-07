@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Starter`,
-    description: `Gatsby Starter`,
+    title: `Source`,
+    description: `We make websites that outrank your competitors. One size doesn't fit all because every business is different. A custom website from Source makes you stand out, boosting traffic and driving sales.`,
     author: `https://sourcerva.com`,
     url: `https://sourcerva.com`,
     siteUrl: `https://sourcerva.com`,
@@ -29,10 +29,6 @@ module.exports = {
               family: "Poppins",
               variants: ["400", "500", "600"],
             },
-            {
-              family: "Josefin Sans",
-              variants: ["400", "500", "600"],
-            },
           ],
         },
       },
@@ -51,12 +47,6 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `username`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
@@ -64,9 +54,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        //trackingId: "UA-159360724-1",
+        trackingId: "UA-159360724-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
         // Setting this parameter is optional
         anonymize: false,
         // Setting this parameter is also optional
@@ -84,14 +74,14 @@ module.exports = {
         // Any additional optional fields
         //sampleRate: 5,
         //siteSpeedSampleRate: 10,
-        //cookieDomain: "imagohair.com",
+        cookieDomain: "sourcerva.com",
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Starter`,
-        short_name: `Starter`,
+        name: `Source`,
+        short_name: `Source`,
         start_url: `/`,
         display: `standalone`,
         icon: `src/images/Icon.png`,

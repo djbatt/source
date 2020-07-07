@@ -34,6 +34,12 @@ const theme = {
         value: 812,
       },
     },
+    control: {
+      border: {
+        radius: 0,
+        width: '0px'
+      },
+    },
     focus: {
       border: {
         color: "brand",
@@ -59,6 +65,13 @@ const theme = {
       side: "all",
     },
   },
+  button: {
+    active: {
+      border: {
+        color: 'light-1',
+      }
+    }
+  }
 }
 
 extendDefaultTheme(theme)

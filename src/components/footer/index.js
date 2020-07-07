@@ -3,15 +3,17 @@ import { Footer, Box, Text } from "grommet"
 import { Twitter, Facebook, Instagram } from "grommet-icons"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Container from "../../utils/container"
-import Logo from "../logo"
 
 export default () => (
-  <Footer>
-    <Container pad={{"vertical": "large", "horizontal": "12px"}}>
-      <Box direction="column" gap='medium' margin={{"bottom": "medium"}}>
-        <Logo />
-
-        <Box direction="row" gap="medium">
+  <Footer background="brand">
+    <Container pad={{ vertical: "large", horizontal: "12px" }}>
+      <Box
+        direction="column"
+        gap="medium"
+        margin={{ bottom: "medium" }}
+        alignContent="center"
+      >
+        <Box direction="row" gap="medium" justify="center">
           <OutboundLink
             rel="noopener noreferrer"
             target="_blank"
@@ -35,23 +37,9 @@ export default () => (
           </OutboundLink>
         </Box>
       </Box>
-      <Box>
+      <Box direction="row" justify="center">
         <Text size="xsmall">
           © {new Date().getFullYear()} SourceRVA LLC. All rights reserved.
-        </Text>
-        <Text size="xsmall">
-          Made with ♥ by{" "}
-          <OutboundLink
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://sourcerva.com"
-            css={`text-decoration: none;`}
-          >
-            <Text color="text" size="xsmall">
-              Source
-            </Text>
-          </OutboundLink>
-          .
         </Text>
       </Box>
     </Container>

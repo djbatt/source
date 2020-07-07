@@ -33,7 +33,7 @@ export default props => {
               text-decoration: none;
             `}
           >
-            <Box direction="row" gap="xsmall" background='brand' pad='small'>
+            <Box direction="row" gap="xsmall" background='brand' pad='small' width='fit-content'>
               <Contact color='text'/>
               <Text color="text" size='large'>Contact Us</Text>
             </Box>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home, Deploy, BusinessService } from "grommet-icons"
+import { Home, Group, BusinessService } from "grommet-icons"
 
 export default [
   {
@@ -8,9 +8,9 @@ export default [
     icon: <Home/>
   },
   {
-    path: "/our-mission",
-    label: "Our Mission",
-    icon: <Deploy/>
+    path: "/about",
+    label: "About Us",
+    icon: <Group/>
   },
   {
     path: "/services",

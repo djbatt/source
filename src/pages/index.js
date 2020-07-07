@@ -7,8 +7,8 @@ export default () => {
   return (
     <Layout>
       <SEO
-        description="Meta Description"
-        title="Source | Website Development and Website Design in Richmond, VA"
+        description="We make websites that outrank your competitors. One size doesn't fit all because every business is different. A custom website from Source makes you stand out, boosting traffic and driving sales."
+        title="Source | Website design and web development in Richmond, VA."
       />
       <PageContent />
     </Layout>

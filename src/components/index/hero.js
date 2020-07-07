@@ -1,7 +1,6 @@
 import React from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
-import { Box, Heading, Paragraph, Text } from "grommet"
-import { Run } from "grommet-icons"
+import { graphql, useStaticQuery } from "gatsby"
+import { Box, Heading, Paragraph } from "grommet"
 import Img from "gatsby-image"
 import Container from "../../utils/container"
 import Responsive from "../../utils/responsive"
@@ -69,30 +68,16 @@ export default () => {
           <Container>
             <Box pad="large">
               <Heading level={1} color="text">
-                We make websites that outrank your competitors.
+                Do you need a new website?
               </Heading>
               <Box width="large">
                 <Paragraph color="text" size="large" fill>
-                One size doesn't fit all because every business is different. A custom website from Source makes you stand out, boosting traffic and driving sales.
+                  We make websites that outrank your competitors. One size
+                  doesn't fit all because every business is different. A custom
+                  website from Source makes you stand out, boosting traffic and
+                  driving sales.
                 </Paragraph>
               </Box>
-              <Link to="/contact" css={`text-decoration: none; width: max-content;`}>
-                <Box
-                  direction="row"
-                  gap="small"
-                  border={{
-                    color: "text",
-                    size: "3px",
-                    style: "solid",
-                    side: "all",
-                  }}
-                  width="fit-content"
-                  pad="small"
-                >
-                  <Run color='text' />
-                  <Text color='text'>Let's get started</Text>
-                </Box>
-              </Link>
             </Box>
           </Container>
         </Box>
