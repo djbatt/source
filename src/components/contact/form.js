@@ -14,11 +14,36 @@ export default () => {
   const [nameVal, setNameVal] = React.useState("")
   const [emailVal, setEmailVal] = React.useState("")
   const [messageVal, setMessageVal] = React.useState("")
+  
+  const sendEmail = () => {
+    let url = "https://ejuvedvkbb.execute-api.us-east-1.amazonaws.com/email"
+
+    let formData = {
+      name: nameVal,
+      email: emailVal,
+      message: messageVal
+    }
+
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(formData),
+    })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
   return (
     <Form
       onChange={value => console.log("Change", value)}
-      onSubmit={event => console.log("Submit", event.value, event.touched)}
+      onSubmit={event => {
+        console.log("Submit", event.value, event.touched);
+        console.log(nameVal, emailVal, messageVal);
+        sendEmail();
+      }}
     >
       <FormField
         name="name"
