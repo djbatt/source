@@ -84,7 +84,7 @@ module.exports = {
         short_name: `Source`,
         start_url: `/`,
         display: `standalone`,
-        icon: `src/images/Icon.png`,
+        icon: `src/images/icon.png`,
       },
     },
   ],
