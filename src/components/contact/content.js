@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Heading, Text } from "grommet"
-import { Twitter, Facebook, Instagram } from "grommet-icons"
+import { Facebook, Instagram } from "grommet-icons"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Container from "../../utils/container"
 import Responsive from "../../utils/responsive"
@@ -36,57 +36,53 @@ const fixedGridAreas = {
   ],
 }
 
-export default () => (
-  <Container pad="large">
-    <Box>
-      <Heading level={2} color="text">
-        We want to help you grow your business online. Start the conversation by
-        sending an email.
-      </Heading>
-      <Responsive
-        columns={columns}
-        rows={rows}
-        areas={fixedGridAreas}
-        gap="large"
-      >
-        <Box gridArea="content-0" fill direction="column" justify="start">
-          <Heading level={3} color="text">
-            Reach out
-          </Heading>
-          <Text color="text">contact@sourcerva.com</Text>
+export default () => {
 
-          <Box direction="row" gap="medium" margin={{top: '16px'}}>
-            <OutboundLink
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://twitter.com"
-            >
-              <Twitter />
-            </OutboundLink>
-            <OutboundLink
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://www.instagram.com"
-            >
-              <Instagram />
-            </OutboundLink>
-            <OutboundLink
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://www.facebook.com"
-            >
-              <Facebook />
-            </OutboundLink>
+  return (
+    <Container pad="large">
+      <Box>
+        <Heading level={2} color="text">
+          We want to help you grow your business online. Start the conversation
+          by sending an email.
+        </Heading>
+        <Responsive
+          columns={columns}
+          rows={rows}
+          areas={fixedGridAreas}
+          gap="large"
+        >
+          <Box gridArea="content-0" fill direction="column" justify="start">
+            <Heading level={3} color="text">
+              Reach out
+            </Heading>
+            <Text color="text">contact@sourcerva.com</Text>
+
+            <Box direction="row" gap="medium" margin={{ top: "16px" }}>
+              <OutboundLink
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.facebook.com/sourcerva/"
+              >
+                <Facebook />
+              </OutboundLink>
+              <OutboundLink
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/source.rva/"
+              >
+                <Instagram />
+              </OutboundLink>
+            </Box>
+            <Heading level={3} color="text">
+              Location
+            </Heading>
+            <Text color="text">Richmond, VA United States</Text>
           </Box>
-          <Heading level={3} color="text">
-            Location
-          </Heading>
-          <Text color="text">Richmond, VA United States</Text>
-        </Box>
-        <Box gridArea="content-1" fill direction="column" justify="start">
-          <Form />
-        </Box>
-      </Responsive>
-    </Box>
-  </Container>
-)
+          <Box gridArea="content-1" fill direction="column" justify="start">
+            <Form/>
+          </Box>
+        </Responsive>
+      </Box>
+    </Container>
+  )
+}

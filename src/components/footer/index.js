@@ -1,6 +1,6 @@
 import React from "react"
 import { Footer, Box, Text } from "grommet"
-import { Twitter, Facebook, Instagram } from "grommet-icons"
+import { Facebook, Instagram } from "grommet-icons"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Container from "../../utils/container"
 
@@ -17,23 +17,16 @@ export default () => (
           <OutboundLink
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com"
-          >
-            <Twitter />
-          </OutboundLink>
-          <OutboundLink
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.instagram.com"
-          >
-            <Instagram />
-          </OutboundLink>
-          <OutboundLink
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/sourcerva/"
           >
             <Facebook />
+          </OutboundLink>
+          <OutboundLink
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.instagram.com/source.rva/"
+          >
+            <Instagram />
           </OutboundLink>
         </Box>
       </Box>
