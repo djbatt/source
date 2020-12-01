@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Heading, Text } from "grommet"
-import { Facebook, Instagram } from "grommet-icons"
+import { Facebook, Instagram, Linkedin, Twitter } from "grommet-icons"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Container from "../../utils/container"
 import Responsive from "../../utils/responsive"
@@ -56,8 +56,18 @@ export default () => {
               Reach out
             </Heading>
             <Text color="text">contact@sourcerva.com</Text>
+            <a href="tel:+18044647289" style={{"textDecoration": "none"}}>
+              <Text color="text">(804) 464-7289</Text>
+            </a>
 
             <Box direction="row" gap="medium" margin={{ top: "16px" }}>
+              <OutboundLink
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/source.rva/"
+              >
+                <Instagram />
+              </OutboundLink>
               <OutboundLink
                 rel="noopener noreferrer"
                 target="_blank"
@@ -68,9 +78,16 @@ export default () => {
               <OutboundLink
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.instagram.com/source.rva/"
+                href="https://twitter.com/sourcerva"
               >
-                <Instagram />
+                <Twitter />
+              </OutboundLink>
+              <OutboundLink
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/company/73513241/"
+              >
+                <Linkedin />
               </OutboundLink>
             </Box>
             <Heading level={3} color="text">
@@ -78,7 +95,7 @@ export default () => {
             </Heading>
             <Text color="text">Richmond, VA United States</Text>
           </Box>
-          <Box gridArea="content-1" fill direction="column" justify="start">
+          <Box gridArea="content-1" fill direction="column" justify="start" height="xlarge">
             <Form/>
           </Box>
         </Responsive>
